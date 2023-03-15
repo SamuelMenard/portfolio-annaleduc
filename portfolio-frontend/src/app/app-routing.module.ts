@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarRoutes } from './core/enums/navbar-routes.enum';
-import { AboutPageComponent } from './features/about/about-page/about-page.component';
-import { ContactPageComponent } from './features/contact/contact-page/contact-page.component';
-import { HomePageComponent } from './features/home/home-page/home-page.component';
-import { PortfolioPageComponent } from './features/portfolio/portfolio-page/portfolio-page.component';
+import { AboutPageComponent } from './features/about/pages/about-page/about-page.component';
+import { ContactPageComponent } from './features/contact/pages/contact-page/contact-page.component';
+import { HomePageComponent } from './features/home/pages/home-page/home-page.component';
+import { PortfolioPageComponent } from './features/portfolio/pages/portfolio-page/portfolio-page.component';
 
 const routes: Routes = [
   { path: '', redirectTo: NavbarRoutes.Home, pathMatch: 'full' },
