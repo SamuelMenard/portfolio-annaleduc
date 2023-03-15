@@ -1,0 +1,17 @@
+<div *ngIf="project" class="grid-container">
+  <div class="project-cover" style="background-color: aqua"></div>
+  <div class="project-description p-5" style="background-color: red">
+    <p>
+      {{ project.description }}
+    </p>
+  </div>
+  <div class="project-title p-5" style="background-color: orange">
+    <h1>{{ project.title }}</h1>
+  </div>
+  <div class="project-navigation" style="background-color: brown">
+    <div class="navigation-container">
+      <div (click)="previous()" style="background-color: blue">Left arrow</div>
+      <div (click)="next()" style="background-color: beige">Right arrow</div>
+    </div>
+  </div>
+</div>

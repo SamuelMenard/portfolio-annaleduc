@@ -1,20 +1,11 @@
-<div class="grid-container">
-  <div class="project-cover" style="background-color: aqua"></div>
-  <div class="project-description p-5" style="background-color: red">
-    <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book
-    </p>
-  </div>
-  <div class="project-title p-5" style="background-color: orange">
-    <h1>Project title</h1>
-  </div>
-  <div class="project-navigation" style="background-color: brown">
-    <div class="navigation-container">
-      <div style="background-color: blue">Left arrow</div>
-      <div style="background-color: beige">Right arrow</div>
-    </div>
+<div class="page-wrapper">
+  <div #projectCarousel class="page-container">
+    <ng-container *ngFor="let project of projects">
+      <app-portfolio-project
+        [project]="project"
+        (nextEventEmitter)="nextProject()"
+        (previousEventEmitter)="previousProject()"
+      ></app-portfolio-project>
+    </ng-container>
   </div>
 </div>
