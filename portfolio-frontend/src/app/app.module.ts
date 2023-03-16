@@ -10,6 +10,7 @@ import { ContactPageComponent } from './features/contact/pages/contact-page/cont
 import { AboutPageComponent } from './features/about/pages/about-page/about-page.component';
 import { PortfolioProjectComponent } from './features/portfolio/components/portfolio-project/portfolio-project.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './core/components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomePageComponent,
     ContactPageComponent,
     AboutPageComponent,
-    PortfolioProjectComponent
+    PortfolioProjectComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
