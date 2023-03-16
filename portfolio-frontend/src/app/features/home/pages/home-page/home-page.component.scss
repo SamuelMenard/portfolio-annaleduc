@@ -1,6 +1,6 @@
 @import "../../../../../styles.scss";
 
-.presentation-page-wrapper {
+.presentation-section-wrapper {
     height: 100vh;
     position: relative;
 }
@@ -68,4 +68,27 @@
 
 .profile-picture {
     height: 30vw;
+}
+
+.services-section-wrapper {
+    padding: 64px 64px 0px 64px;
+    display: flex;
+    flex-direction: column;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 20rem;
+    border-style: none;
+    &:not(:last-child) {
+        margin-right: 32px;
+    }
+    h5 {
+        font-weight: 500;
+    }
 }
