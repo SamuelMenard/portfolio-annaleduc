@@ -1,14 +1,14 @@
-@import '../../../app.component.scss';
+@import "../../../../styles.scss";
 
 .active-route {
-    @extend .primary-color;
-    font-weight: bold;
+  @extend .primary-color;
+  font-weight: bold;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .navbar {
-    transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
 }

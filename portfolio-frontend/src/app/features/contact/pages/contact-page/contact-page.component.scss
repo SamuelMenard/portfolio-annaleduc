@@ -1,0 +1,43 @@
+@import "../../../../../styles.scss";
+
+.page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 72px);
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  text-align: center;
+
+  @media (max-width: 480px) {
+    max-width: 100%;
+  }
+}
+
+.form-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.form-btn {
+  border-radius: 0px;
+}
+
+.social-icon {
+  font-size: 20px;
+  color: black;
+  &:hover {
+    @extend .primary-text-color-ligther;
+  }
+}
+
+.contact-link {
+  @extend .accent-color;
+  &:hover {
+    @extend .accent-color-lighter;
+  }
+}
