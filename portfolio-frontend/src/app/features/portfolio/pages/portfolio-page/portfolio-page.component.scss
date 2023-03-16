@@ -1,7 +1,9 @@
 .page-wrapper {
-  overflow: hidden;
+    overflow: hidden;
+    padding-top: 115px;
 }
 
 .page-container {
-  display: flex;
+    display: flex;
+    height: calc(100vh - 115px);
 }

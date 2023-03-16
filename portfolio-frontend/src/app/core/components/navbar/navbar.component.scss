@@ -1,14 +1,44 @@
 @import "../../../../styles.scss";
 
 .active-route {
-  @extend .primary-color;
-  font-weight: bold;
-}
-
-.center {
-  text-align: center;
+    @extend .primary-color;
+    font-weight: 500;
 }
 
 .navbar {
-  transition: 0.1s ease-in-out;
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: end;
+    align-items: center;
+    z-index: 100;
+    width: 100%;
+    transition: 0.4s;
+    height: 115px;
+    padding: 0px 64px 0px 64px;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar-item {
+    &:not(:last-child) {
+        margin-right: 16px;
+    }
+    a {
+        @extend .primary-text-color-dark;
+        text-decoration: none;
+    }
+}
+
+.social-icon {
+    font-size: 20px;
+    color: black;
+    &:hover {
+        @extend .primary-text-color-ligther;
+    }
 }
