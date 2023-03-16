@@ -32,13 +32,13 @@
     font-size: 20px;
     color: black;
     &:hover {
-        @extend .primary-text-color-ligther;
+        color: $primary-text-color-lighter;
     }
 }
 
 .contact-link {
-    @extend .accent-color;
+    color: $accent-color;
     &:hover {
-        @extend .accent-color-lighter;
+        color: $accent-color-lighter;
     }
 }

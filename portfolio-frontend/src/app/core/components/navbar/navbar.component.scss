@@ -1,7 +1,6 @@
 @import "../../../../styles.scss";
 
 .active-route {
-    @extend .primary-color;
     font-weight: 500;
 }
 
@@ -13,7 +12,7 @@
     align-items: center;
     z-index: 100;
     width: 100%;
-    transition: 0.4s;
+    transition: 0.3s;
     height: 115px;
     padding: 0px 64px 0px 64px;
 }
@@ -30,7 +29,7 @@
         margin-right: 16px;
     }
     a {
-        @extend .primary-text-color-dark;
+        color: $primary-text-color;
         text-decoration: none;
     }
 }
@@ -39,6 +38,6 @@
     font-size: 20px;
     color: black;
     &:hover {
-        @extend .primary-text-color-ligther;
+        color: $primary-text-color-lighter;
     }
 }

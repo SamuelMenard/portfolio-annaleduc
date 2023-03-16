@@ -18,30 +18,7 @@ body {
 }
 
 /* ------- Colors ------- */
-.accent-color {
-    color: #d9d3cb;
-}
-
-.accent-color-lighter {
-    color: #ece3d9;
-}
-
-.primary-color {
-    color: #6e6cd1;
-}
-
-.primary-text-color-dark {
-    color: #000000;
-}
-
-.primary-text-color-ligther {
-    color: #4d4d4d;
-}
-
-.primary-text-color-light {
-    color: #ffffff;
-}
-
-.primary-color-bg {
-    background-color: #6e6cd1;
-}
+$accent-color: #d9d3cb;
+$accent-color-lighter: #ece3d9;
+$primary-text-color: #000000;
+$primary-text-color-lighter: #4d4d4d;

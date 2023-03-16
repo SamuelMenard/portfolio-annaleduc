@@ -1,1 +1,42 @@
-<p>Home page</p>
+<div class="presentation-page-wrapper">
+    <div class="overlay presentation-bg-grid-container">
+        <div class="left-pane"></div>
+    </div>
+    <div class="overlay presentation-container">
+        <div class="presentation-image-wrapper">
+            <div class="presentation-image-container">
+                <div>
+                    <h2 class="name">Annabel Leduc</h2>
+                </div>
+                <div><img class="profile-picture" src="../../../../../assets/global/profile-picture.webp" /></div>
+            </div>
+        </div>
+        <div class="presentation-text-wrapper">
+            <div class="presentation-text-container">
+                <div class="pb-1">
+                    <h1>DESIGNER D'INTÉRIEUR</h1>
+                </div>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book
+                </p>
+                <div class="presentation-text-btn-container pt-4">
+                    <div class="pe-2">
+                        <a [routerLink]="'/' + NavbarRoutes.Contact" type="button" class="btn btn-dark squared"
+                            >Me contacter</a
+                        >
+                    </div>
+                    <div>
+                        <a
+                            [routerLink]="'/' + NavbarRoutes.Portfolio"
+                            type="button"
+                            class="btn btn-outline-dark squared"
+                            >Mon portfolio</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
