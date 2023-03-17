@@ -6,12 +6,14 @@
                     <h1 class="fw-400">LE DESIGN : UNE PASSION</h1>
                 </div>
                 <div class="d-grid col-12 col-sm-3 col-lg-2 mx-auto">
-                    <button class="btn btn-dark squared" type="button">En savoir plus</button>
+                    <button class="btn btn-dark squared" type="button" (click)="onLearnMoreButtonClicked()">
+                        En savoir plus
+                    </button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="academic-section-wrapper">
+    <div #academicSection class="academic-section-wrapper">
         <div class="text-center">
             <h1>Parcours académique</h1>
         </div>

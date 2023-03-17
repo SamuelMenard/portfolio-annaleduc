@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, ElementRef, ViewChild } from "@angular/core";
 import { Router } from "@angular/router";
 import { NavbarRoutes } from "src/app/core/enums/navbar-routes.enum";
 import { ImageTextSectionType } from "src/app/shared/enums/image-text-section-type.enum";
@@ -10,6 +10,8 @@ import { ImageTextSectionContent } from "src/app/shared/models/image-text-sectio
     styleUrls: ["./about-page.component.scss"]
 })
 export class AboutPageComponent {
+    @ViewChild("academicSection") public academicSection?: ElementRef;
+
     public skillsContents: ImageTextSectionContent[] = [
         {
             sectionTitle: "Dessin technique avec Autocad",
@@ -34,6 +36,12 @@ export class AboutPageComponent {
     ];
 
     constructor(private router: Router) {}
+
+    public onLearnMoreButtonClicked(): void {
+        if (this.academicSection) {
+            this.academicSection?.nativeElement.scrollIntoView({ behavior: "smooth", block: "end", inline: "start" });
+        }
+    }
 
     public onImageTextSectionButtonClicked(route: string): void {
         this.router.navigateByUrl(route);

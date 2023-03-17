@@ -26,7 +26,7 @@
 
 .navbar-item {
     &:not(:last-child) {
-        margin-right: 16px;
+        padding-right: 16px;
     }
     a {
         color: $primary-text-color;
