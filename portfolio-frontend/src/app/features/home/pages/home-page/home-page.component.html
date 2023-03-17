@@ -41,39 +41,58 @@
     </div>
 </div>
 
-<div class="services-section-wrapper">
-    <div class="text-center pb-5">
-        <h1>Services</h1>
+<div class="projects-section-wrapper">
+    <div class="projects-section-container">
+        <div class="projects-description-container">
+            <div class="pb-5">
+                <h3 class="fw-400">Un espace qui vous ressemble</h3>
+            </div>
+            <div class="pb-3">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book
+                </p>
+            </div>
+            <div class="d-grid col-12 col-md-4 col-lg-3 mx-auto">
+                <a [routerLink]="'/' + NavbarRoutes.Portfolio" type="button" class="btn btn-dark squared"
+                    >Mon portfolio</a
+                >
+            </div>
+        </div>
+        <div>
+            <img class="project-picture" src="../../../../../assets/global/kitchen-design.webp" />
+        </div>
     </div>
-    <div class="services-container">
-        <div class="card service text-center">
-            <img src="../../../../../assets/global/interior-design-1.webp" />
-            <div class="card-body">
-                <h5 class="card-title">Premier contact</h5>
-                <p class="card-text">
+</div>
+
+<div class="services-section-wrapper">
+    <div class="services-section-container">
+        <div class="text-center">
+            <h1>Services</h1>
+        </div>
+        <div class="services-container">
+            <div class="services-step-container">
+                <span>01</span>
+                <h3>Plan d'aménagement et dessins sur mesure</h3>
+            </div>
+            <div class="services-step-container">
+                <span>02</span>
+                <h3>Recherche de mobilier et accessoires</h3>
+            </div>
+            <div class="services-step-container">
+                <span>03</span>
+                <h3>Suivi de chantier</h3>
+            </div>
+            <div class="services-step-container">
+                <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s.
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book
                 </p>
             </div>
-        </div>
-        <div class="card service text-center">
-            <img src="../../../../../assets/global/interior-design-2.webp" />
-            <div class="card-body">
-                <h5 class="card-title">Conception</h5>
-                <p class="card-text">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s.
-                </p>
-            </div>
-        </div>
-        <div class="card service text-center">
-            <img src="../../../../../assets/global/interior-design-3.webp" />
-            <div class="card-body">
-                <h5 class="card-title">Réalisation</h5>
-                <p class="card-text">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s.
-                </p>
+            <div class="d-grid col-12 col-sm-3 col-lg-2 mx-auto">
+                <a [routerLink]="'/' + NavbarRoutes.Contact" type="button" class="btn btn-dark squared">Me contacter</a>
             </div>
         </div>
     </div>
