@@ -1,17 +1,28 @@
 <div *ngIf="project" class="grid-container">
-  <div class="project-cover" style="background-color: aqua"></div>
-  <div class="project-description p-5" style="background-color: red">
-    <p>
-      {{ project.description }}
-    </p>
-  </div>
-  <div class="project-title p-5" style="background-color: orange">
-    <h1>{{ project.title }}</h1>
-  </div>
-  <div class="project-navigation" style="background-color: brown">
-    <div class="navigation-container">
-      <div (click)="previous()" style="background-color: blue">Left arrow</div>
-      <div (click)="next()" style="background-color: beige">Right arrow</div>
+    <div class="project-cover">
+        <img [src]="project.coverImageUrl" class="cover-image" />
     </div>
-  </div>
+    <div class="project-description p-5">
+        <p>
+            {{ project.description }}
+        </p>
+        <div class="d-grid">
+            <button class="btn btn-dark squared" type="button">En savoir plus</button>
+        </div>
+    </div>
+    <div class="project-title p-5">
+        <div class="d-flex flex-column justify-content-center h-100">
+            <h1>{{ project.title }}</h1>
+            <div class="d-flex gap-2">
+                <i class="bi bi-heart"></i>
+                <span>20</span>
+            </div>
+        </div>
+    </div>
+    <div class="project-navigation">
+        <div class="navigation-container">
+            <div class="arrow-container" (click)="previous()"><i class="bi bi-arrow-left arrow"></i></div>
+            <div class="arrow-container" (click)="next()"><i class="bi bi-arrow-right arrow"></i></div>
+        </div>
+    </div>
 </div>
