@@ -1,0 +1,31 @@
+<div *ngIf="content" class="section-wrapper">
+    <div class="section-container">
+        <div *ngIf="content.imageTextSectionType == ImageTextSectionType.IMAGE_LEFT">
+            <img [style.height]="content.imageHeightVw + 'vw'" [src]="content.imageUrl" />
+        </div>
+        <div
+            class="description-container"
+            [ngClass]="{
+                'image-right-padding': content.imageTextSectionType == ImageTextSectionType.IMAGE_RIGTH,
+                'image-left-padding': content.imageTextSectionType == ImageTextSectionType.IMAGE_LEFT
+            }"
+        >
+            <div class="pb-5">
+                <h3 class="fw-400">{{ content.sectionTitle }}</h3>
+            </div>
+            <div class="pb-3">
+                <p>
+                    {{ content.sectionDescription }}
+                </p>
+            </div>
+            <div *ngIf="content.buttonText" class="d-grid col-12 col-md-4 col-lg-3 mx-auto">
+                <button type="button" class="btn btn-dark squared" (click)="onActionClicked()">
+                    {{ content.buttonText }}
+                </button>
+            </div>
+        </div>
+        <div *ngIf="content.imageTextSectionType == ImageTextSectionType.IMAGE_RIGTH">
+            <img [style.height]="content.imageHeightVw + 'vw'" [src]="content.imageUrl" />
+        </div>
+    </div>
+</div>

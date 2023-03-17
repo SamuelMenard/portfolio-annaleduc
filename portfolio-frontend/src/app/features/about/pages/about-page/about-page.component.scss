@@ -34,9 +34,11 @@
 .academic-section-wrapper {
     display: flex;
     flex-direction: column;
+    height: calc(100vh - 115px);
 }
 
 .academic-section-container {
+    height: 100%;
     display: flex;
     align-items: center;
 }
@@ -51,4 +53,12 @@
 
 .graduation-picture {
     height: 30vw;
+}
+
+.skills-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    > app-image-text-section {
+        padding-top: 5rem;
+    }
 }

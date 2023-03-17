@@ -11,6 +11,7 @@ import { AboutPageComponent } from './features/about/pages/about-page/about-page
 import { PortfolioProjectComponent } from './features/portfolio/components/portfolio-project/portfolio-project.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './core/components/footer/footer.component';
+import { ImageTextSectionComponent } from './shared/components/image-text-section/image-text-section.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FooterComponent } from './core/components/footer/footer.component';
     ContactPageComponent,
     AboutPageComponent,
     PortfolioProjectComponent,
-    FooterComponent
+    FooterComponent,
+    ImageTextSectionComponent
   ],
   imports: [
     BrowserModule,

@@ -12,7 +12,7 @@
         </div>
     </div>
     <div class="academic-section-wrapper">
-        <div class="text-center pb-5">
+        <div class="text-center">
             <h1>Parcours académique</h1>
         </div>
         <div class="academic-section-container">
@@ -35,5 +35,16 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="skills-section-wrapper">
+        <div class="text-center">
+            <h1>Mes compétences</h1>
+        </div>
+        <ng-container *ngFor="let content of skillsContents">
+            <app-image-text-section
+                [content]="content"
+                (buttonClick)="onImageTextSectionButtonClicked($event)"
+            ></app-image-text-section>
+        </ng-container>
     </div>
 </div>
