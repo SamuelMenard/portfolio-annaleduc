@@ -2,5 +2,6 @@ export enum NavbarRoutes {
     Home = "accueil",
     About = "a-propos",
     Contact = "me-contacter",
-    Portfolio = "portfolio"
-  }
+    Portfolio = "portfolio",
+    PortfolioProject = "portfolio/projet"
+}

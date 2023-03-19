@@ -1,0 +1,43 @@
+<div class="page-wrapper">
+    <div class="page-container">
+        <div>
+            <h1>{{ project?.title }}</h1>
+        </div>
+        <div class="d-flex gap-2 pb-3">
+            <i class="bi bi-heart"></i>
+            <span>20</span>
+        </div>
+        <div *ngIf="project?.description">
+            <p>{{ project?.description }}</p>
+        </div>
+        <div class="images-container pt-5">
+            <ng-container *ngFor="let projectImage of project?.projectImages">
+                <div>
+                    <img
+                        class="project-image"
+                        [src]="projectImage.url"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        (click)="onImageClicked(projectImage)"
+                    />
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex justify-content-center">
+                    <img [src]="selectedProjectImage?.url" class="modal-image" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

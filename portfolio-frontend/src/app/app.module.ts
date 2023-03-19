@@ -12,6 +12,7 @@ import { PortfolioProjectComponent } from './features/portfolio/components/portf
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './core/components/footer/footer.component';
 import { ImageTextSectionComponent } from './shared/components/image-text-section/image-text-section.component';
+import { PortfolioProjectPageComponent } from './features/portfolio/pages/portfolio-project-page/portfolio-project-page.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ImageTextSectionComponent } from './shared/components/image-text-sectio
     AboutPageComponent,
     PortfolioProjectComponent,
     FooterComponent,
-    ImageTextSectionComponent
+    ImageTextSectionComponent,
+    PortfolioProjectPageComponent
   ],
   imports: [
     BrowserModule,

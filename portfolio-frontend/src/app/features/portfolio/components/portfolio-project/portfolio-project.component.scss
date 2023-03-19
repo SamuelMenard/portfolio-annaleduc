@@ -55,4 +55,8 @@
 
 .arrow-container {
     cursor: pointer;
+    &:hover {
+        background-color: #fafafa;
+        transition: ease-in-out 150ms;
+    }
 }

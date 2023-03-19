@@ -3,11 +3,18 @@
         <img [src]="project.coverImageUrl" class="cover-image" />
     </div>
     <div class="project-description p-5">
-        <p>
-            {{ project.description }}
-        </p>
+        <div>
+            <p>
+                {{ project.description }}
+            </p>
+        </div>
         <div class="d-grid">
-            <button class="btn btn-dark squared" type="button">En savoir plus</button>
+            <a
+                [routerLink]="['/' + NavbarRoutes.PortfolioProject, project.id]"
+                class="btn btn-dark squared"
+                type="button"
+                >En savoir plus</a
+            >
         </div>
     </div>
     <div class="project-title p-5">

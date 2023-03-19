@@ -1,0 +1,27 @@
+.page-wrapper {
+    padding: 115px 64px 115px 64px;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    > div {
+        padding: 1rem;
+    }
+}
+
+.project-image {
+    width: 100%;
+    cursor: pointer;
+}
+
+.modal-image {
+    max-width: 100%;
+    max-height: 100%;
+}
