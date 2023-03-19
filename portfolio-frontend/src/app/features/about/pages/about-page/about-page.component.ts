@@ -16,7 +16,7 @@ export class AboutPageComponent {
         {
             sectionTitle: "Dessin technique avec Autocad",
             sectionDescription:
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+                "Je suis très douée à utiliser le logiciel de dessin Autocad. Effectivement, avec maintenant plusieurs années d'expérience avec ce logiciel, je suis en mesure de réaliser des dessins complexes avec un rendu professionnel.",
             imageUrl: "../../../../../assets/projects/projet-1/plan-autocad.webp",
             imageTextSectionType: ImageTextSectionType.IMAGE_LEFT,
             imageHeightVw: 30,
@@ -26,7 +26,7 @@ export class AboutPageComponent {
         {
             sectionTitle: "Rendu 3D avec Sketchup",
             sectionDescription:
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+                "Avec mes profondes connaissances du logiciel ainsi que de certaines de ses librairies telle que Lightup, je suis en mesure de créer des espaces 3D très réalistes qui permettent aux clients de bien visualiser leur espace d'aménagement avant même le début des travaux.",
             imageUrl: "../../../../../assets/global/sketchup.webp",
             imageTextSectionType: ImageTextSectionType.IMAGE_RIGTH,
             imageHeightVw: 30,

@@ -13,7 +13,8 @@ export class PortfolioProjectComponent {
         title: "Projet 1",
         description: "Description 1",
         coverImageUrl: "",
-        projectImages: []
+        projectImages: [],
+        likes: 0
     };
     @Output() nextEventEmitter = new EventEmitter<void>();
     @Output() previousEventEmitter = new EventEmitter<void>();

@@ -14,6 +14,7 @@ export class PortfolioProjectPageComponent implements OnInit, OnDestroy {
     public project?: Project;
     public params$: Subscription | undefined;
     public selectedProjectImage?: ProjectImage;
+    public likesPost: boolean = false;
 
     constructor(private portfolioProjectsService: PortfolioProjectsService, private route: ActivatedRoute) {}
 
@@ -34,5 +35,19 @@ export class PortfolioProjectPageComponent implements OnInit, OnDestroy {
 
     public onImageClicked(projectImage: ProjectImage): void {
         this.selectedProjectImage = projectImage;
+    }
+
+    public likeProject(): void {
+        if (this.project && !this.likesPost) {
+            this.project.likes++;
+            this.likesPost = true;
+        }
+    }
+
+    public dislikeProject(): void {
+        if (this.project && this.likesPost) {
+            this.project.likes--;
+            this.likesPost = false;
+        }
     }
 }

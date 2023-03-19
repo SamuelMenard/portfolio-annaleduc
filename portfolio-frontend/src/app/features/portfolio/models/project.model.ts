@@ -6,4 +6,5 @@ export interface Project {
     description: string;
     coverImageUrl: string;
     projectImages: ProjectImage[];
+    likes: number;
 }
